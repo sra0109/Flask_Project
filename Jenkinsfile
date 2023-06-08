@@ -33,14 +33,14 @@ pipeline{
         
     }
     post {
-        always {
-            //it will be executed irrespective of what happens to the pipeline
-        }
+        // always {
+        //     //it will be executed irrespective of what happens to the pipeline
+        // }
         success{
             echo 'build is successful'
         }
         failure{
-
+            echo 'build failed'
         }
     }
 
