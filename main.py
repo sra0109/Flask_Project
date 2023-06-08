@@ -1,4 +1,3 @@
-from email import message
 from urllib import request
 from flask import Flask , render_template, abort , jsonify, request , redirect, url_for#import flask 
 from model import db, save_db
@@ -64,3 +63,9 @@ def delete_card(index):
 #     global counter
 #     counter += 1
 #     return "This page is served " + str(counter) + " times"
+
+if (__name__ == '__main__'):
+    # context = 'adhoc'
+    app.run(host='0.0.0.0', port=50000, debug = True)
+
+    # python manage.py runserver 127.0.0.1:portnumber
